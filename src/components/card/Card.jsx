@@ -1,12 +1,20 @@
+/* eslint-disable react/prop-types */
 import { FaLayerGroup } from "react-icons/fa";
 import { PiCalendarBlankFill } from "react-icons/pi";
 import { BiSolidCalendar } from "react-icons/bi";
 import { FaRegComments } from "react-icons/fa6";
 import { ImAttachment } from "react-icons/im";
 
-const Card = () => {
+const Card = ({ singleData }) => {
+  const handleAttach = () => {
+    
+  };
+
   return (
-    <div id="card" className="space-y-3 bg-white px-2 py-3 rounded-lg">
+    <div
+      id="card"
+      className="space-y-3 w-[335px] bg-white px-2 py-3 rounded-lg"
+    >
       <div className="flex justify-between">
         <div className="flex justify-center items-center">
           <div className="avatar mr-4">
@@ -55,9 +63,12 @@ const Card = () => {
           <FaRegComments className="text-xl" />
           15
         </div>
-        <div className="flex items-center gap-1">
+        <div
+          className="flex items-center gap-1 cursor-pointer"
+          onClick={handleAttach}
+        >
           <ImAttachment />
-          {25}
+          {singleData?.attachFile.length}
         </div>
         <div className="flex items-center gap-1">
           <BiSolidCalendar />

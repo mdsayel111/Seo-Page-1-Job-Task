@@ -4,13 +4,14 @@
 
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0070BB;
+  background: #0070bb;
   border-radius: 5px;
 }
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 1px;
-}
+} */
