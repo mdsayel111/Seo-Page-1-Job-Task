@@ -2,3 +2,7 @@ svg,
 #card {
   color: #666666;
 }
+
+.file-input::file-selector-button {
+  background-color: #0070bb !important;
+}
