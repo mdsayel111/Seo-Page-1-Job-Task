@@ -16,12 +16,11 @@ const Card = ({ singleData }) => {
     setCurrentCard(singleData?._id);
   };
 
-
   return (
     <>
       <div
         id="card"
-        className="space-y-3 w-[335px] bg-white px-2 py-3 rounded-lg"
+        className="space-y-3 w-[360px] bg-white px-2 py-3 rounded-lg"
       >
         <div className="flex justify-between">
           <div className="flex justify-center items-center">
@@ -30,15 +29,15 @@ const Card = ({ singleData }) => {
                 <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
               </div>
             </div>
-            <p className="text-base font-bold">client name</p>
+            <p className="text-base font-bold">Client name</p>
           </div>
           <div className="flex justify-center items-center">
             <div className="avatar mr-4">
               <div className="w-6 rounded-full">
-                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJzEaxLN-jGRYYUO65pWu7Q9GXoNt4LUSSA&usqp=CAU" />
               </div>
             </div>
-            <p className="text-base font-bold">client name</p>
+            <p className="text-base font-bold">Developer name</p>
           </div>
         </div>
         <div className="flex justify-between items-center">
@@ -59,7 +58,7 @@ const Card = ({ singleData }) => {
           </div>
           <div className="avatar">
             <div className="w-6 rounded-full">
-              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJzEaxLN-jGRYYUO65pWu7Q9GXoNt4LUSSA&usqp=CAU" />
             </div>
           </div>
           <div className="avatar placeholder">

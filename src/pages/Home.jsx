@@ -15,7 +15,7 @@ const Home = () => {
   const queryClient = useQueryClient();
 
   const getData = async () => {
-    const res = await axios.get("http://localhost:3000/data");
+    const res = await axios.get("http://localhost:3000/api/data");
     const data = res.data;
     setData(data);
   };
@@ -27,7 +27,7 @@ const Home = () => {
     files.map((file, index) => {
       formData.append("files", files[index]);
     });
-    await axios.post(`http://localhost:3000/file/upload/${id}`, formData, {
+    await axios.post(`http://localhost:3000/api/file/upload/${id}`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
